@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Projectbengkel</string>
+    <string name="acc_info">Akun</string>
+    <string name="cust_name">Customer Name</string>
+    <string name="cust_phone">Phone Number</string>
+    <string name="cust_mail">Email</string>
+    <string name="cust_address">Address</string>
 </resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projectbengkel.projectbengkel.accountinfo"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="386dp"
+        android:layout_height="585dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg_img"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/header_img"
+        tools:layout_editor_absoluteY="-26dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/sml_profile"
+        android:layout_width="52dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="5dp"
+        app:srcCompat="@drawable/customer_pictures"
+        tools:layout_editor_absoluteY="5dp"
+        tools:layout_editor_absoluteX="327dp" />
+
+    <ImageView
+        android:id="@+id/lrg_profile"
+        android:layout_width="130dp"
+        android:layout_height="137dp"
+        app:srcCompat="@drawable/profile_img"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/backarrow_img"
+        tools:layout_editor_absoluteY="69dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="35dp"
+        android:layout_height="37dp"
+        app:srcCompat="@drawable/edit_img"
+        tools:layout_editor_absoluteY="169dp"
+        tools:layout_editor_absoluteX="215dp" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/phone_img"
+        tools:layout_editor_absoluteY="253dp"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        app:srcCompat="@drawable/mail_img"
+        tools:layout_editor_absoluteY="297dp"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="35dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/location_img"
+        tools:layout_editor_absoluteY="336dp"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <ImageView
+        android:id="@+id/acc_info_button"
+        android:layout_width="148dp"
+        android:layout_height="125dp"
+        app:srcCompat="@drawable/acc_info_img"
+        tools:layout_editor_absoluteY="452dp"
+        tools:layout_editor_absoluteX="118dp" />
+
+    <TextView
+        android:id="@+id/txt_cust_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cust_name"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <TextView
+        android:id="@+id/txt_cust_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cust_phone"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteY="264dp"
+        tools:layout_editor_absoluteX="93dp" />
+
+    <TextView
+        android:id="@+id/txt_cust_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cust_mail"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteY="309dp"
+        tools:layout_editor_absoluteX="93dp" />
+
+    <TextView
+        android:id="@+id/txt_cust_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cust_address"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteY="360dp"
+        tools:layout_editor_absoluteX="93dp" />
+
+    <TextView
+        android:id="@+id/txt_acc_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acc_info"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="543dp" />
+
+
+</android.support.constraint.ConstraintLayout>
