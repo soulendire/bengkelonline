@@ -37,14 +37,19 @@
         android:layout_width="52dp"
         android:layout_height="47dp"
         android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/customer_pictures"
-        tools:layout_editor_absoluteY="7dp"
-        tools:layout_editor_absoluteX="325dp" />
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="18dp" />
 
     <ImageView
         android:id="@+id/lrg_profile"
         android:layout_width="130dp"
         android:layout_height="137dp"
+        app:layout_constraintBottom_toTopOf="@id/txt_cust_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/profile_img"
         tools:layout_editor_absoluteX="127dp"
         tools:layout_editor_absoluteY="77dp" />
@@ -53,14 +58,18 @@
         android:id="@+id/backarrow"
         android:layout_width="51dp"
         android:layout_height="51dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@drawable/backarrow_img"
-        tools:layout_editor_absoluteY="69dp"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp" />
 
     <ImageView
         android:id="@+id/edit"
         android:layout_width="35dp"
         android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="@id/lrg_profile"
+        app:layout_constraintRight_toRightOf="@id/lrg_profile"
         app:srcCompat="@drawable/edit_img"
         tools:layout_editor_absoluteY="169dp"
         tools:layout_editor_absoluteX="215dp" />
@@ -69,33 +78,41 @@
         android:id="@+id/phone"
         android:layout_width="35dp"
         android:layout_height="36dp"
+        app:layout_constraintTop_toBottomOf="@id/lrg_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@drawable/phone_img"
-        tools:layout_editor_absoluteY="253dp"
-        tools:layout_editor_absoluteX="46dp" />
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="32dp" />
 
     <ImageView
         android:id="@+id/mail"
         android:layout_width="35dp"
         android:layout_height="39dp"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@drawable/mail_img"
-        tools:layout_editor_absoluteY="297dp"
-        tools:layout_editor_absoluteX="46dp" />
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="7dp" />
 
     <ImageView
         android:id="@+id/location"
         android:layout_width="35dp"
         android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@drawable/location_img"
-        tools:layout_editor_absoluteY="336dp"
-        tools:layout_editor_absoluteX="46dp" />
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="0dp" />
 
     <ImageView
         android:id="@+id/acc_info_button"
         android:layout_width="148dp"
         android:layout_height="125dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_cust_address"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/acc_info_img"
-        tools:layout_editor_absoluteY="452dp"
-        tools:layout_editor_absoluteX="118dp" />
+        android:layout_marginTop="87dp" />
 
     <TextView
         android:id="@+id/txt_cust_name"
@@ -103,6 +120,9 @@
         android:layout_height="wrap_content"
         android:text="@string/cust_name"
         android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/lrg_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="222dp" />
 
@@ -112,8 +132,10 @@
         android:layout_height="wrap_content"
         android:text="@string/cust_phone"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteY="264dp"
-        tools:layout_editor_absoluteX="93dp" />
+        app:layout_constraintTop_toTopOf="@id/lrg_profile"
+        app:layout_constraintLeft_toRightOf="@id/phone"
+        android:layout_marginTop="179dp"
+        android:layout_marginLeft="12dp" />
 
     <TextView
         android:id="@+id/txt_cust_mail"
@@ -121,8 +143,10 @@
         android:layout_height="wrap_content"
         android:text="@string/cust_mail"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteY="309dp"
-        tools:layout_editor_absoluteX="93dp" />
+        app:layout_constraintTop_toBottomOf="@id/txt_cust_phone"
+        app:layout_constraintLeft_toRightOf="@id/mail"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="28dp" />
 
     <TextView
         android:id="@+id/txt_cust_address"
@@ -130,8 +154,10 @@
         android:layout_height="wrap_content"
         android:text="@string/cust_address"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteY="360dp"
-        tools:layout_editor_absoluteX="93dp" />
+        app:layout_constraintTop_toBottomOf="@id/txt_cust_mail"
+        app:layout_constraintLeft_toRightOf="@id/location"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="35dp" />
 
     <TextView
         android:id="@+id/txt_acc_info"
@@ -139,6 +165,9 @@
         android:layout_height="wrap_content"
         android:text="@string/acc_info"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteX="177dp"
         tools:layout_editor_absoluteY="543dp" />
 
