@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".accountinfo" />
-        <activity android:name=".editaccountinfo"></activity>
+        <activity android:name=".editaccountinfo" />
+        <activity android:name=".editpassword"></activity>
     </application>
 
 </manifest>
