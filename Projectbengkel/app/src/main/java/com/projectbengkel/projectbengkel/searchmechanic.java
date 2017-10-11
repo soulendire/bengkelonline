@@ -11,6 +11,8 @@ public class searchmechanic extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searchmechanic);
         WebView gif = (WebView) findViewById(R.id.loading_gif);
-        gif.loadUrl("file:///res/drawable/search_mechanic.gif");
+        //gif.loadUrl("file:///android_res/drawable/search_mechanic.gif");
+        gif.loadDataWithBaseURL(null, "<style>img{display: inline;height: auto;max-width: 100%;}</style>" +
+                "<img src=\"file:///android_res/drawable/search_mechanic.gif\">", "text/html", "UTF-8", null);
     }
 }
