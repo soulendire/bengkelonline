@@ -19,7 +19,6 @@
         <activity android:name=".accountinfo" />
         <activity android:name=".editaccountinfo" />
         <activity android:name=".editpassword" />
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
