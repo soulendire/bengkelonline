@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projectbengkel.projectbengkel.callmechanic"
+    android:background="@drawable/background_peta">
+
+    <ImageView
+        android:id="@+id/rating"
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:background="@drawable/rating"
+        android:layout_above="@+id/btn"
+        android:layout_toLeftOf="@+id/callImage"
+        android:layout_toStartOf="@+id/callImage"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="46dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageMechanic" />
+
+    <ImageView
+        android:id="@+id/imageMechanic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/rating"
+        android:layout_alignLeft="@+id/rating"
+        android:background="@drawable/imagemekanik"
+        tools:layout_editor_absoluteY="340dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.029" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:background="@drawable/message"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/rating"
+        android:layout_alignEnd="@+id/rating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="268dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/userprofile"
+        android:layout_alignTop="@+id/imageMechanic"
+        android:layout_toLeftOf="@+id/profileMechanic"
+        android:layout_toStartOf="@+id/profileMechanic"
+        tools:layout_editor_absoluteY="340dp"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <TextView
+        android:id="@+id/profileMechanic"
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:background="@drawable/john"
+        android:layout_alignTop="@+id/profile"
+        android:layout_alignLeft="@+id/call"
+        android:layout_alignStart="@+id/call"
+        tools:layout_editor_absoluteY="340dp"
+        tools:layout_editor_absoluteX="159dp" />
+
+    <TextView
+        android:id="@+id/call"
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:background="@drawable/nohp"
+        android:layout_alignBottom="@+id/imageMechanic"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteY="380dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.559" />
+
+    <ImageView
+        android:id="@+id/callImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:layout_alignBottom="@+id/call"
+        android:layout_toLeftOf="@+id/profileMechanic"
+        android:background="@drawable/telephone"
+        tools:layout_editor_absoluteX="122dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
+
+</android.support.constraint.ConstraintLayout>
+
