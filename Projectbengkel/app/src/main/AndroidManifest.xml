@@ -20,7 +20,8 @@
         <activity android:name=".editaccountinfo" />
         <activity android:name=".editpassword" />
         <activity android:name=".homescreen" />
-        <activity android:name=".callmechanic"></activity>
+        <activity android:name=".serviceinfo" />
+        <activity android:name=".pickuploc"></activity>
     </application>
 
 </manifest>
